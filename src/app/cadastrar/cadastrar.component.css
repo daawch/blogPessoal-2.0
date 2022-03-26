@@ -1,0 +1,19 @@
+#img-bg{
+    background-image: url('../../assets/tokyo.jpg');
+    min-height: 695px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#color-bg{
+    background-image: url('../../assets/color.bg.jpg');
+    min-height: 695px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mt{
+    margin-top: 30pt;   
+}
