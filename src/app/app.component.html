@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<app-menu *ngIf="auth.logado()" ></app-menu>
+
+<router-outlet class="m-0"></router-outlet>
+
+<app-rodape *ngIf="auth.logado()" class="m-0"></app-rodape>

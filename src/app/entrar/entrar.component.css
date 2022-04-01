@@ -1,6 +1,6 @@
 #img-bg{
     background-image: url('../../assets/tokyo.jpg');
-    min-height: 695px;
+    min-height: 100vh;
     
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
 
 #color-bg{
     background-image: url('../../assets/color.bg.jpg');
-    min-height: 695px;
+    min-height: 100vh;
     
     background-position: center;
     background-size: cover;
@@ -21,9 +21,18 @@
 }
 
 .input-color{
-    background-color: #ff9ff3;
+    border:2px solid #464646
 }
 
 .btn-outline{
     border: none;
+}
+
+.botao{
+    border:2px solid #464646
+}
+
+.botao:hover{
+    background-color:#464646;
+    color: rgb(255, 255, 255);
 }

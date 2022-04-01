@@ -10,6 +10,11 @@ ul.social-media li{
 
 }
 
+.bg-color{
+    background-image: url(../../assets/color.bg.jpg);
+    background-position: bottom;
+}
+
 .fa{
     font-size: 35pt;
     color: aliceblue;

@@ -1,0 +1,100 @@
+<div class="container-fluid bg-color ">
+
+    <div class="row d-flex align-items-center">
+
+        <div class="col-md-6">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="fs-54">Seja bem vindo(a)!</h1>
+                    <h5 class="fs-18">expresse aqui o que você quiser!</h5>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-3 mb-5">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova Postagem</button>
+                    <a class="btn btn-outline-dark ms-3" href="#postagens">Ver Postagem</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <img src="../../assets/foto_blog_anime-removebg-preview.png" alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="container pb-5 mt-5" id="postagens">
+        <nav class="d-flex justify-content-center">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-todasPostagens-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-todasPostagens" type="button" role="tab" aria-controls="nav-todasPostagens"
+                    aria-selected="true">todas as postagens</button>
+
+                <button class="nav-link" id="nav-meusPosts-tab" data-bs-toggle="tab" data-bs-target="#nav-meusPosts"
+                    type="button" role="tab" aria-controls="nav-meusPosts" aria-selected="false">minhas
+                    postagens</button>
+
+                <button class="nav-link" id="nav-temaPosts-tab" data-bs-toggle="tab" data-bs-target="#nav-temaPosts"
+                    type="button" role="tab" aria-controls="nav-temaPosts" aria-selected="false">postagens por
+                    tema</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-todasPostagens" role="tabpanel"
+                aria-labelledby="nav-todasPostagens-tab">todas as postagens</div>
+
+            <div class="tab-pane fade" id="nav-meusPosts" role="tabpanel" aria-labelledby="nav-meusPosts-tab">minhas
+                postagens</div>
+
+            <div class="tab-pane fade" id="nav-temaPosts" role="tabpanel" aria-labelledby="nav-temaPosts-tab">postagens
+                por tema</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nova Postagem</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Texto</label>
+                    <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Escolha um tema ou <a href="">cadastre um novo</a></label>
+                    <select class="form-control" name="tema" id="tema">
+                        <option value="">temas</option>
+                    </select>
+                </div>
+
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">cancelar</button>
+                <button type="button" class="btn btn-outline-success">publicar</button>
+            </div>
+        </div>
+    </div>
+</div>
