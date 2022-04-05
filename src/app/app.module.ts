@@ -30,10 +30,7 @@ import { TemaComponent } from './tema/tema.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy,
-  },],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
